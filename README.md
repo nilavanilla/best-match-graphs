@@ -22,21 +22,21 @@ USAGE
 If you call the program without any other command line argument it will tell you how to open the help function.
 
 
-./bmg -h
+./bmg -h<br>
 It is the help function that explains briefly the usage of the program in the bash.
 
 
-./bmg -d [path of the input data] dg -a [1/2] [-l]
-To check whether a given colored digraph is a cBMG you have to hand over the path of the input data. Then you can choose which algorithm you want to use to test the properties of a cBMG. Option 1 is the algorithm that uses the reachable sets of the equivalence classes to build the Hasse diagram of their hierarchy and option 2 uses the informative triples to construct the Aho tree.
+./bmg -d [path of the input data] dg -a [1/2] [-l]<br>
+To check whether a given colored digraph is a cBMG you have to hand over the path of the input data. Then you can choose which algorithm you want to use to test the properties of a cBMG. Option 1 is the algorithm that uses the reachable sets of the equivalence classes to build the Hasse diagram of their hierarchy and option 2 uses the informative triples to construct the Aho tree.<br>
 With the optional parameter -l you indicate that the input data also contains the labels of the vertices.
 
 
-./bmg -d [path of the input data] t [-l]
-To construct the cBMG of a given tree you have to hand over the path of the input data.
+./bmg -d [path of the input data] t [-l]<br>
+To construct the cBMG of a given tree you have to hand over the path of the input data.<br>
 With the optional parameter -l you indicate that the input data also contains the labels of the vertices.
 
 
-./bmg -c [number of ramdomly created cBMGs] [number of vertices] [number of species] [maximal number of manipulated edges] [number of testing runs per cBMG]
+./bmg -c [number of ramdomly created cBMGs] [number of vertices] [number of species] [maximal number of manipulated edges] [number of testing runs per cBMG]<br>
 To generate a data set of the robustness of randomly created cBMGs. The number of cBMGs, the number of testing runs per cBMG and the maximal number of edge manipuations. The random cBMGs are created with different parameters that you also have to enter to the command line when calling the program. Here you can decide how many vertices and how many species the graph shall contain.
 
 ___________
@@ -47,15 +47,15 @@ INPUT DATA FILES
 You need a .txt file and if you want to take a look at an example open ./examples/example1.txt or ./examples/example2.txt. Note that it is not necessary to specify the vertex labels and if you want to do it you have to arrange them in the same order as they are read in while the species specification in the next lines. Also the adjacence matrix repesents the vertices in this order. Every line and row represent a vertex and you insert 1 at the position [i][j] if there is an directed edge from the i'th vertex to the j'th vertex or 0 if not. The input data file needs the following content and it has to be in that order:
 
 
-[number of vertices v]
-[number of species n]
-[optionally vertex labels sperated by a blank]
-[number of vertices of the first species]
-.
-.
-.
-[number of vertices of the n'th species]
-[adjecence matrix with v lines and rows]
+[number of vertices v]<br>
+[number of species n]<br>
+[optionally vertex labels sperated by a blank]<br>
+[number of vertices of the first species]<br>
+.<br>
+.<br>
+.<br>
+[number of vertices of the n'th species]<br>
+[adjecence matrix with v lines and rows]<br>
 
 
 
@@ -63,16 +63,16 @@ You need a .txt file and if you want to take a look at an example open ./example
 You need a .txt file and if you want to take a look at an example open ./examples/example3.txt or ./examples/example4.txt. Note that it is not necessary to specify the leaf labels and if you want to do it you have to arrange them in the same order as they are read in while the species specification in the next lines. The rows of the adjacence matrix represent all tree nodes in which the first x rows represent the inner nodes and the others represent the leafs (same order as they are read in while species specification). The adjacence matrix only needs x lines because there canot be an outer edge of a leaf. So every line represents a inner node of the tree. You insert 1 at the position [i][j] if there is an directed edge from the i'th inner node to the j'th tree node or 0 if not. Note that the first row and line of the adjacence matrix represent the root of the tree. The input data file needs the following content and it has to be in that order:
 
 
-[number of vertices v]
-[number of species n]
-[number of inner nodes x]
-[optionally leaf labels sperated by a blank]
-[number of vertices of the first species]
-.
-.
-.
-[number of vertices of the n'th species]
-[adjecence matrix with v rows and x lines]
+[number of vertices v]<br>
+[number of species n]<br>
+[number of inner nodes x]<br>
+[optionally leaf labels sperated by a blank]<br>
+[number of vertices of the first species]<br>
+.<br>
+.<br>
+.<br>
+[number of vertices of the n'th species]<br>
+[adjecence matrix with v rows and x lines]<br>
 
 ___________
 
@@ -105,10 +105,10 @@ ___________
 
 OTHER IMPORTANT FACTS
 
-You can remove the object files with the ending .o and the visualization files from the working directory if you want to archive the directory. 
+You can remove the object files with the ending .o and the visualization files from the working directory if you want to archive the directory. <br>
 Use the command:	make clean
 
 The image files bmg.png and lrt.png that are generated to visualize the cBMG and LRT will be overwritten with the new output when you call the program again.
 
-If you want to learn more about colored Best Match Graphs, the program bmg and the used algorithms read the file BA_BMG_NicolaDoering.pdf that is contained on that CD or the paper "Best match graphs" which you can find here:
-https://link.springer.com/article/10.1007/s00285-019-01332-9
+If you want to learn more about colored Best Match Graphs read the paper "Best match graphs" which you can find here:
+https://arxiv.org/abs/1803.10989
