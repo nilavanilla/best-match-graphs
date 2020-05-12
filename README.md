@@ -43,7 +43,7 @@ ___________
 
 INPUT DATA FILES
 
->Colored Digraph
+######Colored Digraph
 You need a .txt file and if you want to take a look at an example open ./examples/example1.txt or ./examples/example2.txt. Note that it is not necessary to specify the vertex labels and if you want to do it you have to arrange them in the same order as they are read in while the species specification in the next lines. Also the adjacence matrix repesents the vertices in this order. Every line and row represent a vertex and you insert 1 at the position [i][j] if there is an directed edge from the i'th vertex to the j'th vertex or 0 if not. The input data file needs the following content and it has to be in that order:
 
 
@@ -59,7 +59,7 @@ You need a .txt file and if you want to take a look at an example open ./example
 
 
 
->Tree
+######Tree
 You need a .txt file and if you want to take a look at an example open ./examples/example3.txt or ./examples/example4.txt. Note that it is not necessary to specify the leaf labels and if you want to do it you have to arrange them in the same order as they are read in while the species specification in the next lines. The rows of the adjacence matrix represent all tree nodes in which the first x rows represent the inner nodes and the others represent the leafs (same order as they are read in while species specification). The adjacence matrix only needs x lines because there canot be an outer edge of a leaf. So every line represents a inner node of the tree. You insert 1 at the position [i][j] if there is an directed edge from the i'th inner node to the j'th tree node or 0 if not. Note that the first row and line of the adjacence matrix represent the root of the tree. The input data file needs the following content and it has to be in that order:
 
 
