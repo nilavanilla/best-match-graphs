@@ -6,19 +6,19 @@ INSTALLATION
 
 This description of the installation process can be used with any Linux operating system.
 
-Navigate the bash to the directory where the program files lay.<\br>
+Navigate the bash to the directory where the program files lay.<br>
 Use the command:	make
 
-To visualize the graphs you need the program Graphviz.<\br>
+To visualize the graphs you need the program Graphviz.<br>
 Install it with: 	sudo apt-get install graphviz
 
-The survey of datas of the robustness of random cBMGs needs a directory called "output". If there is not such an directory in the directory of the program files you need to create one.<\br>
+The survey of datas of the robustness of random cBMGs needs a directory called "output". If there is not such an directory in the directory of the program files you need to create one.<br>
 Create the directory with the command:	mkdir output
 ___________
 
 USAGE
 
-./bmg<\br>
+./bmg<br>
 If you call the program without any other command line argument it will tell you how to open the help function.
 
 
