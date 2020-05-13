@@ -1,5 +1,6 @@
 # best-match-graphs
 bmg is a program that processes different tasks that come along with the consideration of colored Best Match Graphs.
+The code is written in C++.
 ____________
 
 INSTALLATION
