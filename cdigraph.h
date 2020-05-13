@@ -1,3 +1,7 @@
+//Nicola Doering
+//28/01/2020
+//BA Best Match Graphs
+
 //Header-Data of the directed graph 
 
 #ifndef _CDIGRAPH_H_
