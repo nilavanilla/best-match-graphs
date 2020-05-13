@@ -15,7 +15,7 @@ class Class : public Vertex	{
 		std::vector<std::set<int> > neighbors; 	//neighbors[0] = N, neighbors[1] = NN, neighbors[2] = NNN, neighbor[3] = N- neighbors[4] = R
 
 		Class(){};
-		Class(int col, std::vector<int> memb, std::set<int> in, std::set<int> out, std::vector<std::vector<int> > adj, std::vector<int> vert, int nr);		//line 6
+		Class(int col, std::vector<int> memb, std::set<int> in, std::set<int> out, std::vector<std::vector<int> > adj, std::vector<int> vert, int nr);		//line 10
 };
 
 #endif //_CLASS_H_
