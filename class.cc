@@ -1,3 +1,7 @@
+//Nicola Doering
+//28/01/2020
+//BA Best Match Graphs
+
 #include "class.h"
 
 using namespace std;
