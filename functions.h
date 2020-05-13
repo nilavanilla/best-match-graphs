@@ -1,3 +1,7 @@
+//Nicola Doering
+//28/01/2020
+//BA Best Match Graphs
+
 #ifndef _FUNCTIONS_H_
 #define _FUNCTIONS_H_
 
