@@ -1,3 +1,7 @@
+//Nicola Doering
+//28/01/2020
+//BA Best Match Graphs
+
 //Header-Data of the Vertex
 
 #ifndef _VERTEX_H_
@@ -22,7 +26,7 @@ class Vertex	{
 		std::string mark;	//label of the vertex that is used in the visualisation of the graphs
 		
 		Vertex() {};
-		Vertex(int nr, int col, std::string na);		//line 6
+		Vertex(int nr, int col, std::string na);		//line 10
 };
 
 #endif //_VERTEX_H_
