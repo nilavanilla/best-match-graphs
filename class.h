@@ -1,3 +1,7 @@
+//Nicola Doering
+//28/01/2020
+//BA Best Match Graphs
+
 //Header-Data of the equivalence class in a  cBMG
 
 #ifndef _CLASS_H_
