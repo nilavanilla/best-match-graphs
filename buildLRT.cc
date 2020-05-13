@@ -1,3 +1,7 @@
+//Nicola Doering
+//28/01/2020
+//BA Best Match Graphs
+
 #include "functions.h"
 
 using namespace std;
