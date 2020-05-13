@@ -7,36 +7,36 @@ INSTALLATION
 This description of the installation process can be used with any Linux operating system.
 
 Navigate the bash to the directory where the program files lay.<br>
-Use the command:	make
+Use the command:	$ make
 
 To visualize the graphs you need the program Graphviz.<br>
-Install it with: 	sudo apt-get install graphviz
+Install it with: 	$ sudo apt-get install graphviz
 
 The survey of datas of the robustness of random cBMGs needs a directory called "output". If there is not such an directory in the directory of the program files you need to create one.<br>
-Create the directory with the command:	mkdir output
+Create the directory with the command:	$ mkdir output
 ___________
 
 USAGE
 
-./bmg<br>
+$ ./bmg<br>
 If you call the program without any other command line argument it will tell you how to open the help function.
 
 
-./bmg -h<br>
+$ ./bmg -h<br>
 It is the help function that explains briefly the usage of the program in the bash.
 
 
-./bmg -d [path of the input data] dg -a [1/2] [-l]<br>
+$ ./bmg -d [path of the input data] dg -a [1/2] [-l]<br>
 To check whether a given colored digraph is a cBMG you have to hand over the path of the input data. Then you can choose which algorithm you want to use to test the properties of a cBMG. Option 1 is the algorithm that uses the reachable sets of the equivalence classes to build the Hasse diagram of their hierarchy and option 2 uses the informative triples to construct the Aho tree.<br>
 With the optional parameter -l you indicate that the input data also contains the labels of the vertices.
 
 
-./bmg -d [path of the input data] t [-l]<br>
+$ ./bmg -d [path of the input data] t [-l]<br>
 To construct the cBMG of a given tree you have to hand over the path of the input data.<br>
 With the optional parameter -l you indicate that the input data also contains the labels of the vertices.
 
 
-./bmg -c [number of ramdomly created cBMGs] [number of vertices] [number of species] [maximal number of manipulated edges] [number of testing runs per cBMG]<br>
+$ ./bmg -c [number of ramdomly created cBMGs] [number of vertices] [number of species] [maximal number of manipulated edges] [number of testing runs per cBMG]<br>
 To generate a data set of the robustness of randomly created cBMGs. The number of cBMGs, the number of testing runs per cBMG and the maximal number of edge manipuations. The random cBMGs are created with different parameters that you also have to enter to the command line when calling the program. Here you can decide how many vertices and how many species the graph shall contain.
 
 ___________
